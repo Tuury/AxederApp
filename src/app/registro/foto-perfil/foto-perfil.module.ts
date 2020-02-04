@@ -15,6 +15,9 @@ import { FotoPerfilPage } from './foto-perfil.page';
     IonicModule,
     FotoPerfilPageRoutingModule
   ],
+  exports: [
+    FotoPerfilPage
+  ],
   declarations: [FotoPerfilPage]
 })
 export class FotoPerfilPageModule {}

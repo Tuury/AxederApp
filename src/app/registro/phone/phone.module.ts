@@ -15,6 +15,9 @@ import { PhonePage } from './phone.page';
     IonicModule,
     PhonePageRoutingModule
   ],
+  exports: [
+    PhonePage
+  ],
   declarations: [PhonePage]
 })
 export class PhonePageModule {}

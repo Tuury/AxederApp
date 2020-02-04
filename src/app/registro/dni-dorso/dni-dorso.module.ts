@@ -15,6 +15,9 @@ import { DniDorsoPage } from './dni-dorso.page';
     IonicModule,
     DniDorsoPageRoutingModule
   ],
+  exports: [
+    DniDorsoPage
+  ],
   declarations: [DniDorsoPage]
 })
 export class DniDorsoPageModule {}

@@ -15,6 +15,9 @@ import { DniFrentePage } from './dni-frente.page';
     IonicModule,
     DniFrentePageRoutingModule
   ],
+  exports: [
+    DniFrentePage
+  ],
   declarations: [DniFrentePage]
 })
 export class DniFrentePageModule {}

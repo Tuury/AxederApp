@@ -15,6 +15,9 @@ import { RegistrarPage } from './registrar.page';
     IonicModule,
     RegistrarPageRoutingModule
   ],
+  exports: [
+    RegistrarPage
+  ],
   declarations: [RegistrarPage]
 })
 export class RegistrarPageModule {}

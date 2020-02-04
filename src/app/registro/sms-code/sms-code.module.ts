@@ -15,6 +15,9 @@ import { SmsCodePage } from './sms-code.page';
     IonicModule,
     SmsCodePageRoutingModule
   ],
+  exports: [
+    SmsCodePage
+  ],
   declarations: [SmsCodePage]
 })
 export class SmsCodePageModule {}
