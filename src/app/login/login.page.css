@@ -1,0 +1,42 @@
+.banner {
+  background-image: url(../../assets/backgrounds/bg-login.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40%;
+}
+
+.flex {
+  display: flex;
+}
+
+.box {
+  box-shadow: -1px 10px 5px 8px whitesmoke;
+}
+
+.block {
+  display: block;
+  padding-top: 10px;
+}
+
+.singIn {
+  box-shadow: #e8e8e8;
+  --border-radius: 30px;
+  width: 70px;
+  height: 70px;
+}
+
+.loginButton {
+  width: 70%;
+}
+
+ion-icon {
+  font-size: 60px;
+}
+
+ion-label {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=login.page.css.map */
