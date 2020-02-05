@@ -1,7 +1,18 @@
-<ion-list>
-  <ion-label>asdasd</ion-label>
-  <ion-input></ion-input>
-  <ion-button></ion-button>
+<ion-header class="flex ion-align-items-center">
+    <ion-button size="small" fill="clear" routerLink="/login">
+        <ion-icon name="arrow-back" color="light" size="large"></ion-icon>
+    </ion-button>
+    <ion-label>Número de DNI</ion-label>
+</ion-header>
+<ion-list class="ion-padding">
+    <ion-label>Ingrese su número de DNI</ion-label>
+    <div class="flex ion-justify-content-center ion-padding">
+        <ion-input type="number"></ion-input>
+        <ion-input type="number"></ion-input>
+        <ion-input type="number"></ion-input>
+        <ion-input type="number"></ion-input>
+    </div>
+    <ion-button expand="round" size="large" class="ion-padding" (click)="slideMove('next')">Enviar</ion-button>
 </ion-list>
 
 

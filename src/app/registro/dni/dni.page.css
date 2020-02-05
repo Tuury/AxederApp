@@ -20,7 +20,7 @@ ion-button {
 
 ion-header {
   position: fixed;
-  top : 2%;
+  top: 2%;
 }
 
 ion-header > ion-button {
@@ -30,3 +30,5 @@ ion-header > ion-button {
 ion-header > ion-label {
   color: white;
 }
+
+/*# sourceMappingURL=dni.page.css.map */

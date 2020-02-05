@@ -1,25 +1,25 @@
 <ion-content>
-    <ion-slides pager="true">
+    <ion-slides pager="true" #sliderRef [options]="{allowTouchMove: false, scrollbar: false}">
         <ion-slide>
-            <app-dni></app-dni>
+            <app-dni (slideMovement)="moveSlides($event)" class="fullWidth"></app-dni>
         </ion-slide>
         <ion-slide>
-            <app-registrar></app-registrar>
+            <app-registrar (slideMovement)="moveSlides($event)" class="fullWidth"></app-registrar>
         </ion-slide>
         <ion-slide>
-            <app-phone></app-phone>
+            <app-phone (slideMovement)="moveSlides($event)" class="fullWidth"></app-phone>
         </ion-slide>
         <ion-slide>
-            <app-sms-code></app-sms-code>
+            <app-sms-code (slideMovement)="moveSlides($event)" class="fullWidth"></app-sms-code>
         </ion-slide>
         <ion-slide>
-            <app-dni-frente></app-dni-frente>
+            <app-dni-frente (slideMovement)="moveSlides($event)" class="fullWidth"></app-dni-frente>
         </ion-slide>
         <ion-slide>
-            <app-dni-dorso></app-dni-dorso>
+            <app-dni-dorso (slideMovement)="moveSlides($event)" class="fullWidth"></app-dni-dorso>
         </ion-slide>
         <ion-slide>
-            <app-foto-perfil></app-foto-perfil>
+            <app-foto-perfil (slideMovement)="moveSlides($event)" class="fullWidth"></app-foto-perfil>
         </ion-slide>
     </ion-slides>
 </ion-content>

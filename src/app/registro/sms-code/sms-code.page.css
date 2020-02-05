@@ -1,22 +1,26 @@
+ion-text {
+  font-size: 40px;
+  color: #0cd1e8;
+}
+
+ion-label {
+  font-size: 15px;
+}
+
 ion-list {
   margin: auto;
-  height: 80%;
-  padding-top: 10px;
+  padding-top: 20%;
   border-radius: 15px;
 }
 
 ion-button {
   width: 90%;
-  height: 5%;
-}
-
-ion-item {
-  padding-top: 10px;
+  height: 10%;
 }
 
 ion-header {
   position: fixed;
-  top : 2%;
+  top: 2%;
 }
 
 ion-header > ion-button {
@@ -26,3 +30,5 @@ ion-header > ion-button {
 ion-header > ion-label {
   color: white;
 }
+
+/*# sourceMappingURL=sms-code.page.css.map */

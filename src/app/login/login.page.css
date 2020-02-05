@@ -11,10 +11,6 @@
   display: flex;
 }
 
-.box {
-  box-shadow: -1px 10px 5px 8px whitesmoke;
-}
-
 .block {
   display: block;
   padding-top: 10px;

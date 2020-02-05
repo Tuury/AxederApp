@@ -2,15 +2,14 @@ ion-content {
   --background: url(../../assets/backgrounds/bg_home.svg) center top / contain no-repeat;
 }
 
-
-ion-toolbar{
- --background: linear-gradient(to right, #46b9e4 0%, #38a4d7 100%) !important;
+ion-toolbar {
+  --background: linear-gradient(to right, #46b9e4 0%, #38a4d7 100%) !important;
   background-image: none;
   border-color: transparent;
   padding: 2% 2% 0 4%;
 }
 
-.caja{
+.caja {
   border-radius: 15px;
   background-color: #00c4fa;
   width: 50%;
@@ -20,3 +19,5 @@ ion-toolbar{
 .wrapper {
   height: 50%;
 }
+
+/*# sourceMappingURL=home.page.css.map */

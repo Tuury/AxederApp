@@ -1,0 +1,31 @@
+ion-list {
+  margin: auto;
+  padding-top: 20%;
+  border-radius: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+ion-input {
+  width: 2px;
+}
+
+ion-button {
+  width: 90%;
+  height: 10%;
+}
+
+ion-header {
+  position: fixed;
+  top : 2%;
+}
+
+ion-header > ion-button {
+  width: fit-content;
+}
+
+ion-header > ion-label {
+  color: white;
+}

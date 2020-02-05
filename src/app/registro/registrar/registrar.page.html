@@ -1,9 +1,52 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registrar</ion-title>
-  </ion-toolbar>
+<ion-header class="flex ion-align-items-center">
+    <ion-button size="small" fill="clear" (click)="slideMove('back')">
+        <ion-icon name="arrow-back" color="light" size="large"></ion-icon>
+    </ion-button>
+    <ion-label>Registrarse</ion-label>
 </ion-header>
-
-<ion-content>
-
-</ion-content>
+<ion-list >
+    <div class="ion-justify-content-center ion-padding">
+        <ion-item>
+            <ion-label position="floating">
+                <ion-icon src="../../assets/iconos/perfil.svg"></ion-icon>
+                Nombre y apellido
+            </ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">
+                <ion-icon src="../../assets/iconos/mail.svg"></ion-icon>
+                Mail
+            </ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">
+                <ion-icon src="../../assets/iconos/dni.svg"></ion-icon>
+                DNI
+            </ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">
+                <ion-icon src="../../assets/iconos/contraseña.svg"></ion-icon>
+                Contraseña
+            </ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">
+                <ion-icon src="../../assets/iconos/contraseña.svg"></ion-icon>
+                Confirmar contraseña
+            </ion-label>
+            <ion-input></ion-input>
+        </ion-item>
+      <ion-item>
+        <ion-checkbox></ion-checkbox>
+        <ion-label>Acepto los términos y condiciones</ion-label>
+      </ion-item>
+    </div>
+    <ion-button expand="round" size="large" class="ion-padding" (click)="slideMove('next')">Siguiente
+    <ion-icon name="arrow-forward"></ion-icon>
+    </ion-button>
+</ion-list>

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {NavController} from '@ionic/angular';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {IonSlides} from '@ionic/angular';
 
 @Component({
   selector: 'app-registro',
@@ -8,9 +8,19 @@ import {NavController} from '@ionic/angular';
 })
 export class RegistroPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  @ViewChild('sliderRef', { static: true }) protected slides: IonSlides;
+
+  constructor() { }
 
   ngOnInit() {
+  }
+
+  moveSlides(direction) {
+    if (direction === 'next') {
+      this.slides.slideNext();
+    } else {
+      this.slides.slidePrev();
+    }
   }
 
 

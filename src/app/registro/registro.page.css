@@ -1,0 +1,17 @@
+ion-content {
+  --background: url("../../assets/backgrounds/bg_subir dni.svg") center top / contain no-repeat;
+}
+
+.fullWidth {
+  width: 95%;
+}
+
+ion-header {
+  --background: transparent;
+}
+
+ion-slides {
+  height: 100%;
+}
+
+/*# sourceMappingURL=registro.page.css.map */

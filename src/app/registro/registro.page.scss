@@ -1,5 +1,13 @@
 ion-content{
-  --background: url('../../assets/backgrounds/bg_subir dni.svg') no-repeat;
+  --background: url('../../assets/backgrounds/bg_subir dni.svg') center top / contain no-repeat;
+}
+
+.fullWidth {
+  width: 95%;
+}
+
+ion-header {
+  --background: transparent;
 }
 
 ion-slides {

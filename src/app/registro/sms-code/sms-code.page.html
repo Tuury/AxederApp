@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>sms-code</ion-title>
-  </ion-toolbar>
+<ion-header class="flex ion-align-items-center">
+    <ion-button size="small" fill="clear" (click)="slideMove('back')">
+        <ion-icon name="arrow-back" color="light" size="large"></ion-icon>
+    </ion-button>
+    <ion-label>Ingresar código</ion-label>
 </ion-header>
+<ion-list class="ion-padding">
+    <div class="block">
+        <ion-text>* * * * * *</ion-text>
+    </div>
+    <div class="block">
+        <ion-label>Enviamos un SMS a +54 11 2076 4458
+            con un codigo de verificación de 6 digitos
+        </ion-label>
+    </div>
+    <div class="flex ion-justify-content-center ion-padding">
+        <ion-input type="number"></ion-input>
+        <ion-input type="number"></ion-input>
+        <ion-input type="number"></ion-input>
+        <ion-input type="number"></ion-input>
+    </div>
+    <ion-button expand="round" size="large" class="ion-padding" (click)="slideMove('next')">Enviar</ion-button>
+</ion-list>
 
-<ion-content>
+<div class="flex ion-justify-content-center ion-padding">
+  <ion-label>¿No recibiste el código?</ion-label>
+</div>
+<div class="flex ion-justify-content-center ion-padding">
+  <ion-button fill="clear">Volver a enviar</ion-button>
+  |
+  <ion-button fill="clear">Recibe una llamada</ion-button>
+</div>
 
-</ion-content>
+
+

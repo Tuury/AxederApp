@@ -1,9 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
+<ion-header class="flex">
+    <ion-toolbar>
+        <ion-icon slot="start" name="menu" color="light" size="large"></ion-icon>
+        <ion-text color="light" slot="start">Hola {{nombre}}</ion-text>
+        <ion-text color="light" slot="end">Axeder</ion-text>
+    </ion-toolbar>
 </ion-header>
-
 <ion-content>
+        <div class="flex ion-justify-content-center">
+            <ion-img src="../../assets/ilustraciones/credito_preaprobado.svg"></ion-img>
+        </div>
+        <div class="flex ion-justify-content-center  wrapper">
+            <div class="block caja ion-justify-content-center ">
+                <div class="flex ion-justify-content-center ">
+                    <ion-text color="light">ARS 10500</ion-text>
+                    <ion-icon color="light" name="arrow-forward"></ion-icon>
+                </div>
+                <div class="flex ion-justify-content-center">
+                    <ion-text color="light">Crédito Preaprobado</ion-text>
+                </div>
+            </div>
+        </div>
 
 </ion-content>

@@ -1,9 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>dni-dorso</ion-title>
-  </ion-toolbar>
+<ion-header class="flex ion-align-items-center">
+  <ion-button size="small" fill="clear" (click)="slideMove('back')">
+    <ion-icon name="arrow-back" color="light" size="large"></ion-icon>
+  </ion-button>
+  <ion-label>Foto de DNI dorso</ion-label>
 </ion-header>
+<ion-list class="ion-padding">
+  <div class="flex ion-justify-content-center ion-padding">
+    <ion-img src="../assets/ilustraciones/dni_dorso.svg"></ion-img>
+  </div>
+  <ion-label>
+    Subí una foto del
+    dorso de tu DNI
+  </ion-label>
+  <ion-button expand="round" size="large" class="ion-padding" (click)="slideMove('next')">Enviar</ion-button>
+</ion-list>
 
-<ion-content>
 
-</ion-content>

@@ -24,3 +24,19 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.box {
+  box-shadow: -1px 10px 5px 8px rgba(245,245,245,1);
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+ion-header{
+  z-index: 0; //elimina el borde inferior
+}

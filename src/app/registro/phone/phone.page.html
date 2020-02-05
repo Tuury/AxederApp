@@ -1,9 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>phone</ion-title>
-  </ion-toolbar>
+<ion-header class="flex ion-align-items-center">
+  <ion-button size="small" fill="clear" (click)="slideMove('back')">
+    <ion-icon name="arrow-back" color="light" size="large"></ion-icon>
+  </ion-button>
+  <ion-label>Número de celular</ion-label>
 </ion-header>
+<ion-list class="ion-padding">
+  <ion-label>Ingrese su número de celular</ion-label>
+  <div class="flex ion-justify-content-center ion-padding">
+    +54
+    <ion-input type="number"></ion-input>
+    <ion-input type="number"></ion-input>
+    <ion-input type="number"></ion-input>
+    <ion-input type="number"></ion-input>
+  </div>
+  <ion-button expand="round" size="large" class="ion-padding" (click)="slideMove('next')">Enviar</ion-button>
+</ion-list>
 
-<ion-content>
 
-</ion-content>

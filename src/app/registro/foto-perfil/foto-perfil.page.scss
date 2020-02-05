@@ -1,0 +1,28 @@
+ion-img{
+  width: 50%;
+}
+
+ion-list {
+  margin: auto;
+  border-radius: 15px;
+}
+
+ion-label {
+}
+
+ion-button {
+  width: 90%;
+  height: 10%;
+}
+ion-header {
+  position: fixed;
+  top : 2%;
+}
+
+ion-header > ion-button {
+  width: fit-content;
+}
+
+ion-header > ion-label {
+  color: white;
+}
