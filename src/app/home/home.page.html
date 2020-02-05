@@ -1,24 +1,54 @@
+<!--MENU-->
+<ion-menu contentId="main" side="start" menuId="first">
+    <ion-toolbar class="flex ion-align-items-center">
+        <div class="flex ion-justify-content-center menuHeader">
+            <ion-icon class="avatarIcon" src="../../assets/ilustraciones/perfil.svg"></ion-icon>
+            <ion-title color="light">{{nombre}}</ion-title>
+        </div>
+    </ion-toolbar>
+    <ion-content>
+        <ion-list lines="none">
+            <ion-item>
+                <ion-icon src="../../assets/iconos/perfil.svg"></ion-icon>
+                <ion-label>Mis Datos</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-icon src="../../assets/iconos/cbu.svg"></ion-icon>
+                <ion-label>Cambiar CBU</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-icon src="../../assets/iconos/telefono.svg"></ion-icon>
+                <ion-label>Cambiar tëlefono</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-icon src="../../assets/iconos/contraseña.svg"></ion-icon>
+                <ion-label>Cambiar Contraseña</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<!--MENU-->
+
 <ion-header class="flex">
     <ion-toolbar>
-        <ion-icon slot="start" name="menu" color="light" size="large"></ion-icon>
+        <ion-icon slot="start" name="menu" color="light" size="large" (click)="openMenu()"></ion-icon>
         <ion-text color="light" slot="start">Hola {{nombre}}</ion-text>
         <ion-text color="light" slot="end">Axeder</ion-text>
     </ion-toolbar>
 </ion-header>
-<ion-content>
-        <div class="flex ion-justify-content-center">
-            <ion-img src="../../assets/ilustraciones/credito_preaprobado.svg"></ion-img>
-        </div>
-        <div class="flex ion-justify-content-center  wrapper">
-            <div class="block caja ion-justify-content-center ">
-                <div class="flex ion-justify-content-center ">
-                    <ion-text color="light">ARS 10500</ion-text>
-                    <ion-icon color="light" name="arrow-forward"></ion-icon>
-                </div>
-                <div class="flex ion-justify-content-center">
-                    <ion-text color="light">Crédito Preaprobado</ion-text>
-                </div>
+<ion-content id="main">
+    <div class="flex ion-justify-content-center">
+        <ion-img src="../../assets/ilustraciones/credito_preaprobado.svg"></ion-img>
+    </div>
+    <div class="flex ion-justify-content-center  wrapper">
+        <div class="block caja ion-justify-content-center ">
+            <div class="flex ion-justify-content-center ">
+                <ion-text color="light">ARS 10500</ion-text>
+                <ion-icon color="light" name="arrow-forward"></ion-icon>
+            </div>
+            <div class="flex ion-justify-content-center">
+                <ion-text color="light">Crédito Preaprobado</ion-text>
             </div>
         </div>
-
+    </div>
 </ion-content>
