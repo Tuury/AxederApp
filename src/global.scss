@@ -25,6 +25,27 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+@font-face {
+  font-family: 'Montserrat regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fuentes/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fuentes/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat semiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fuentes/Montserrat-SemiBold.ttf');
+}
+
 .box {
   box-shadow: -1px 10px 5px 8px rgba(245,245,245,1);
 }

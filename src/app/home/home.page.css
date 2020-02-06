@@ -2,6 +2,11 @@ ion-content {
   --background: url(../../assets/backgrounds/bg_home.svg) center top / contain no-repeat;
 }
 
+ion-label {
+  font-family: "Montserrat semiBold";
+  color: #3171e0;
+}
+
 ion-toolbar {
   --background: linear-gradient(to right, #46b9e4 0%, #38a4d7 100%) !important;
   background-image: none;
@@ -46,9 +51,9 @@ ion-menu > ion-content {
   width: 100%;
 }
 
-ion-button {
+.btn {
   width: 80%;
-  height: 150px;
+  height: 75%;
 }
 
 div > ion-button {

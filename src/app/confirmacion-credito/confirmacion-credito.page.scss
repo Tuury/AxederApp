@@ -1,0 +1,56 @@
+.header {
+  --background: url(../../assets/backgrounds/bg_codigo de confirmacion.svg) center top / contain no-repeat;
+  height: 100%;
+}
+
+ion-header {
+  height: 20%;
+}
+
+ion-text {
+  font-size: 40px;
+  color: #0cd1e8;
+}
+ion-label {
+  font-size: 15px;
+}
+
+ion-list {
+  margin: auto;
+  padding-top: 20%;
+  border-radius: 15px;
+}
+
+ion-button {
+  width: 90%;
+  height: 40px;
+}
+
+ion-header > ion-button {
+  width: fit-content;
+}
+
+ion-header > ion-label {
+  color: white;
+}
+
+ion-label > ion-text{
+  font-size: 30px;
+  color: white;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.bigFont {
+  font-size: 30px;
+  font-family: "Montserrat bold";
+  text-align: center;
+}
+
+.blue {
+  color: dodgerblue;
+}

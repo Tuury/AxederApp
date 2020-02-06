@@ -2,7 +2,9 @@ ion-content {
   --background: url(../../assets/backgrounds/bg_preaprobacion.svg) center top / contain no-repeat;
 }
 
-
+.grid {
+  display: grid;
+}
 
 ion-row {
   height: 25%;
@@ -16,10 +18,22 @@ ion-grid{
   height: 30%;
 }
 
-ion-row > ion-button {
-  height: 100px;
+.btn{
+  height: 80%;
 }
 
-.btn{
-  height: 100px;
+.no-ripple {
+  --ripple-color: transparent;
+}
+
+.boxTitle {
+  font-family: "Montserrat semiBold";
+  font-size: 15px;
+  white-space: pre-line;
+  color: #3171e0;
+}
+
+.nextButton {
+  width: 80%;
+  height: 50px;
 }
