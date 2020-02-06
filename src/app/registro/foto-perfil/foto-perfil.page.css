@@ -7,6 +7,10 @@ ion-list {
   border-radius: 15px;
 }
 
+ion-label {
+  width: 50%;
+}
+
 ion-button {
   width: 90%;
   height: 10%;

@@ -1,0 +1,25 @@
+ion-content {
+  --background: url(../../assets/backgrounds/bg_preaprobacion.svg) center top / contain no-repeat;
+}
+
+ion-row {
+  height: 25%;
+}
+
+ion-grid {
+  height: 70%;
+}
+
+.header {
+  height: 30%;
+}
+
+ion-row > ion-button {
+  height: 100px;
+}
+
+.btn {
+  height: 100px;
+}
+
+/*# sourceMappingURL=credito-preaprobado.page.css.map */

@@ -12,12 +12,70 @@ ion-toolbar {
 .caja {
   border-radius: 15px;
   background-color: #00c4fa;
-  width: 50%;
+  width: 70%;
   height: 30%;
+}
+
+.grid {
+  display: grid;
+}
+
+.white-box {
+  border-radius: 15px;
+  width: 90%;
+  box-shadow: 3px 11px 27px 0px #bab4ba;
 }
 
 .wrapper {
   height: 50%;
+}
+
+ion-menu > ion-toolbar {
+  height: 20%;
+}
+
+ion-menu > ion-content {
+  --background: none;
+}
+
+.avatarIcon {
+  font-size: 50px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+ion-button {
+  width: 80%;
+  height: 150px;
+}
+
+div > ion-button {
+  width: 80%;
+  height: 50px;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+ion-grid {
+  background-color: white;
+}
+
+.buttonIcon {
+  font-size: 50px;
+}
+.buttonIcon .overlap {
+  position: absolute;
+  /* Reposition logo from the natural layout */
+  left: 75px;
+  top: 0px;
+  width: 300px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=home.page.css.map */

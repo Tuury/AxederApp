@@ -29,26 +29,68 @@
 </ion-menu>
 <!--MENU-->
 
-<ion-header class="flex">
+<ion-content id="main" scrollY="false">
     <ion-toolbar>
         <ion-icon slot="start" name="menu" color="light" size="large" (click)="openMenu()"></ion-icon>
         <ion-text color="light" slot="start">Hola {{nombre}}</ion-text>
         <ion-text color="light" slot="end">Axeder</ion-text>
     </ion-toolbar>
-</ion-header>
-<ion-content id="main">
     <div class="flex ion-justify-content-center">
-        <ion-img src="../../assets/ilustraciones/credito_preaprobado.svg"></ion-img>
+        <ion-img class="overlap" src="../../assets/ilustraciones/credito_preaprobado.svg"></ion-img>
     </div>
-    <div class="flex ion-justify-content-center  wrapper">
-        <div class="block caja ion-justify-content-center ">
-            <div class="flex ion-justify-content-center ">
-                <ion-text color="light">ARS 10500</ion-text>
-                <ion-icon color="light" name="arrow-forward"></ion-icon>
-            </div>
-            <div class="flex ion-justify-content-center">
-                <ion-text color="light">Crédito Preaprobado</ion-text>
-            </div>
+    <div class="flex ion-justify-content-center ">
+        <div class="block caja ion-justify-content-center " routerLink="/credito-preaprobado">
+                <div class="flex ion-justify-content-center ion-padding-top">
+                    <ion-text color="light">ARS 10500</ion-text>
+                </div>
+                <div class="flex ion-justify-content-center ion-padding-bottom">
+                    <ion-text color="light">Crédito Preaprobado</ion-text>
+                </div>
         </div>
     </div>
+
+    <ion-grid class="absolute">
+        <ion-row class="flex ion-justify-content-center">
+            <ion-button color="light">
+                <div class="grid">
+                    <div class="flex ion-justify-content-center">
+                        <ion-icon class="ion-padding buttonIcon"
+                                  src="../../assets/ilustraciones/pedir_prestamo.svg"></ion-icon>
+                    </div>
+                    <ion-label class="ion-padding">Pedir prestamo</ion-label>
+                </div>
+            </ion-button>
+        </ion-row>
+        <ion-row class="flex ion-justify-content-center">
+            <ion-col size="6" class="flex ion-justify-content-center">
+                <ion-button color="light">
+                    <div class="grid">
+                        <div class="flex ion-justify-content-center">
+                            <ion-icon class="ion-padding buttonIcon"
+                                      src="../../assets/ilustraciones/beneficios.svg"></ion-icon>
+                        </div>
+                        <ion-label class="ion-padding">Beneficios</ion-label>
+                    </div>
+                </ion-button>
+            </ion-col>
+            <ion-col size="6" class="flex ion-justify-content-center">
+                <ion-button color="light">
+                    <div class="grid">
+                        <div class="flex ion-justify-content-center">
+                            <ion-icon class="ion-padding buttonIcon"
+                                      src="../../assets/ilustraciones/mi_cuenta.svg"></ion-icon>
+                        </div>
+                        <ion-label class="ion-padding">Mi Cuenta</ion-label>
+                    </div>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <div class="flex ion-justify-content-center">
+            <ion-button expand="round" routerLink="/login">
+                <ion-label>Salir</ion-label>
+                <ion-icon src="../../assets/iconos/salir.svg"></ion-icon>
+            </ion-button>
+        </div>
+    </ion-grid>
 </ion-content>
+

@@ -35,4 +35,8 @@ ion-label {
   font-size: 12px;
 }
 
+.shadow {
+  box-shadow: 3px 11px 27px 0px #bab4ba;
+}
+
 /*# sourceMappingURL=login.page.css.map */
