@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-dni',
@@ -13,6 +13,7 @@ export class DniPage implements OnInit {
 
   ngOnInit() {
   }
+
 
   slideMove(direction: string) {
     this.slideMovement.emit(direction);

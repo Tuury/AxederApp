@@ -28,69 +28,80 @@
     </ion-content>
 </ion-menu>
 <!--MENU-->
-
-<ion-content id="main" scrollY="false">
-    <ion-toolbar>
-        <ion-icon slot="start" name="menu" color="light" size="large" (click)="openMenu()"></ion-icon>
-        <ion-text color="light" slot="start">Hola {{nombre}}</ion-text>
-        <ion-text color="light" slot="end">Axeder</ion-text>
-    </ion-toolbar>
-    <div class="flex ion-justify-content-center">
-        <ion-img class="overlap" src="../../assets/ilustraciones/credito_preaprobado.svg"></ion-img>
-    </div>
-    <div class="flex ion-justify-content-center ">
-        <div class="block caja ion-justify-content-center " routerLink="/credito-preaprobado">
-                <div class="flex ion-justify-content-center ion-padding-top">
-                    <ion-text color="light">ARS 10500</ion-text>
-                </div>
-                <div class="flex ion-justify-content-center ion-padding-bottom">
-                    <ion-text color="light">Crédito Preaprobado</ion-text>
-                </div>
+<ion-header>
+    <ion-toolbar class="block ion-padding-top">
+        <div class="flex header">
+            <div class="flex ion-align-items-center">
+                <ion-icon slot="start" name="menu" color="light" size="large" (click)="openMenu()"></ion-icon>
+                <ion-text color="light" slot="start">Hola {{nombre}}</ion-text>
+            </div>
+            <div class="flex ion-align-items-center ion-float-end">
+                <ion-text color="light" class="ion-float-end">Axeder</ion-text>
+            </div>
         </div>
-    </div>
 
-    <ion-grid class="absolute">
-        <ion-row class="flex ion-justify-content-center">
-            <ion-button class="btn" color="light" routerLink="/solicitud-ingresada">
+        <ion-img id="headerImg" src="../../assets/ilustraciones/credito_preaprobado.svg"></ion-img>
+        <div class="flex ion-justify-content-center ion-no-margin ion-no-padding">
+
+            <ion-button id="caja" routerLink="/credito-preaprobado">
+                <div class="flex ion-justify-content-center">
+                    <div class="block">
+                        <div class="flex ion-justify-content-center ion-padding-top">
+                            <ion-text color="light">ARS 10500</ion-text>
+                        </div>
+                        <div class="flex ion-justify-content-center ion-padding-bottom">
+                            <ion-text color="light">Crédito Preaprobado</ion-text>
+                        </div>
+                    </div>
+                    <div class="flex ion-align-items-center">
+                        <ion-icon name="arrow-forward" slot="end" size="large"></ion-icon>
+                    </div>
+                </div>
+            </ion-button>
+        </div>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content id="main" scrollY="false">
+    <div class="wrapper">
+        <div class="flex ion-justify-content-center  divBotones">
+            <ion-button class="btn" color="white" routerLink="/solicitud-ingresada">
                 <div class="grid">
-                    <div class="flex ion-justify-content-center">
+                    <div class="flex ion-justify-content-center ">
                         <ion-icon class="ion-padding buttonIcon"
                                   src="../../assets/ilustraciones/pedir_prestamo.svg"></ion-icon>
                     </div>
                     <ion-label class="ion-padding">Pedir prestamo</ion-label>
                 </div>
             </ion-button>
-        </ion-row>
-        <ion-row class="flex ion-justify-content-center">
-            <ion-col size="6" class="flex ion-justify-content-center">
-                <ion-button class="btn" color="light">
-                    <div class="grid">
-                        <div class="flex ion-justify-content-center">
-                            <ion-icon class="ion-padding buttonIcon"
-                                      src="../../assets/ilustraciones/beneficios.svg"></ion-icon>
-                        </div>
-                        <ion-label class="ion-padding">Beneficios</ion-label>
+        </div>
+        <div class="flex ion-justify-content-center divBotones">
+            <ion-button class="btn ion-margin-end" color="white">
+                <div class="grid ">
+                    <div class="flex ion-justify-content-center">
+                        <ion-icon class="ion-padding buttonIcon"
+                                  src="../../assets/ilustraciones/beneficios.svg"></ion-icon>
                     </div>
-                </ion-button>
-            </ion-col>
-            <ion-col size="6" class="flex ion-justify-content-center">
-                <ion-button class="btn" color="light">
-                    <div class="grid">
-                        <div class="flex ion-justify-content-center">
-                            <ion-icon class="ion-padding buttonIcon"
-                                      src="../../assets/ilustraciones/mi_cuenta.svg"></ion-icon>
-                        </div>
-                        <ion-label class="ion-padding">Mi Cuenta</ion-label>
+                    <ion-label class="ion-padding">Beneficios</ion-label>
+                </div>
+            </ion-button>
+
+            <ion-button class="btn" color="white">
+                <div class="grid ">
+                    <div class="flex ion-justify-content-center">
+                        <ion-icon class="ion-padding buttonIcon"
+                                  src="../../assets/ilustraciones/mi_cuenta.svg"></ion-icon>
                     </div>
-                </ion-button>
-            </ion-col>
-        </ion-row>
-        <div class="flex ion-justify-content-center">
-            <ion-button expand="round" routerLink="/login">
+                    <ion-label class="ion-padding">Mi Cuenta</ion-label>
+                </div>
+            </ion-button>
+        </div>
+        <div class="flex ion-justify-content-center divBotones logoutButton">
+            <ion-button expand="round" routerLink="/login" class="logoutButton">
                 <ion-label color="light">Salir</ion-label>
                 <ion-icon src="../../assets/iconos/salir.svg"></ion-icon>
             </ion-button>
         </div>
-    </ion-grid>
+    </div>
 </ion-content>
 

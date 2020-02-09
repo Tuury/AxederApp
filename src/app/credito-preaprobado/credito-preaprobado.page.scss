@@ -1,5 +1,9 @@
-ion-content {
-  --background: url(../../assets/backgrounds/bg_preaprobacion.svg) center top / contain no-repeat;
+ion-toolbar {
+  --background: url(../../assets/backgrounds/bg_preaprobacion.svg) 100% 100% / cover no-repeat;
+  height: 100%;
+}
+ion-header{
+  height: 20%;
 }
 
 .grid {
@@ -14,26 +18,47 @@ ion-grid{
   height: 70%;
 }
 
+ion-icon{
+  color: white;
+}
+
 .header{
   height: 30%;
 }
 
 .btn{
   height: 80%;
+  --background: white;
 }
 
-.no-ripple {
-  --ripple-color: transparent;
+ion-label {
+  padding-top: 5px;
+}
+
+.caja {
+  background-color:  rgb(60, 221, 250,0.7);
+  border-radius: 15px;
 }
 
 .boxTitle {
-  font-family: "Montserrat semiBold";
+  font-family: "Montserrat regular";
+  text-decoration: bold;
   font-size: 15px;
   white-space: pre-line;
   color: #3171e0;
 }
 
+.boxSubtTitle {
+  font-weight: bolder;
+}
+
 .nextButton {
   width: 80%;
   height: 50px;
+}
+
+#backButton{
+  position: absolute;
+  left: 0px;
+  top: 5px;
 }

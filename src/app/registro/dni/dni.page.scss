@@ -9,8 +9,13 @@ ion-list {
 }
 
 ion-input {
+  text-align: center;
+  font-size: 35px;
+  margin:2px;
+  padding: 0 5px 0 5px !important;
+  width: 15%;
+  border-radius: 3px;
   border-bottom: 1px solid;
-  width: 2px;
 }
 
 ion-button {

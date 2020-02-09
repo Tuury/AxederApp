@@ -1,5 +1,5 @@
-ion-content {
-  --background: url(../../assets/backgrounds/bg_home.svg) center top / contain no-repeat;
+ion-toolbar {
+  --background: url(../../assets/backgrounds/bg_home.svg) 100% 100% / cover no-repeat;
 }
 
 ion-label {
@@ -7,18 +7,11 @@ ion-label {
   color: #3171e0;
 }
 
-ion-toolbar {
-  --background: linear-gradient(to right, #46b9e4 0%, #38a4d7 100%) !important;
-  background-image: none;
-  border-color: transparent;
-  padding: 2% 2% 0 4%;
-}
-
-.caja {
-  border-radius: 15px;
-  background-color: #00c4fa;
-  width: 70%;
-  height: 30%;
+#caja {
+  width: 80%;
+  padding-bottom: 15px;
+  padding-right: 0 !important;
+  --background: rgb(60, 221, 250,0.7);
 }
 
 .grid {
@@ -51,14 +44,10 @@ ion-menu > ion-content {
   width: 100%;
 }
 
-.btn {
-  width: 80%;
-  height: 75%;
-}
-
 div > ion-button {
-  width: 80%;
-  height: 50px;
+  width: 100%;
+  height: inherit;
+  border-radius: 15px;
 }
 
 .absolute {
@@ -67,20 +56,35 @@ div > ion-button {
   bottom: 0;
 }
 
-ion-grid {
-  background-color: white;
-}
-
 .buttonIcon {
   font-size: 50px;
 }
-.buttonIcon .overlap {
-  position: absolute;
-  /* Reposition logo from the natural layout */
-  left: 75px;
-  top: 0px;
-  width: 300px;
-  height: 200px;
+
+.wrapper {
+  height: 60%;
+}
+
+.btn {
+  height: 100%;
+  box-shadow: 3px 4px 21px -1px #827a82;
+}
+
+.divBotones {
+  width: 100%;
+  height: fit-content;
+  padding: 10px 20px 10px 20px;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.logoutButton {
+  height: 40%;
+}
+
+#headerImg {
+  height: 100px !important;
 }
 
 /*# sourceMappingURL=home.page.css.map */
